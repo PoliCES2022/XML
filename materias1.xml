@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding='ISO-8859-1' standalone='no'?>
+
+<!DOCTYPE materias [
+		<!ELEMENT materias (semestre1)*>
+		<!ATTLIST materias
+				carrera CDATA #REQUIRED
+				año CDATA #REQUIRED>
+		<!ELEMENT semestre1 (materia1|materia2)*>
+		<!ELEMENT materia1 (nombre|horario)*>
+		<!ATTLIST materia1
+				creditos CDATA #REQUIRED>
+		<!ELEMENT nombre (#PCDATA)>
+		<!ELEMENT horario (#PCDATA)>
+		<!ELEMENT materia2 (nombre|horario)*>
+		<!ATTLIST materia2
+				créditos CDATA #REQUIRED>
+		]>
+<materias carrera="Tecnología en Sistematización de Datos" año="2022">
+	<semestre1>
+		<materia1 creditos="3">
+			<nombre>CÉS3Ñ</nombre>
+			<horario>6pm</horario>
+		</materia1>
+		<materia1 creditos="4">
+			<nombre>Base de datos &gt; 2</nombre>
+			<horario>10am</horario>
+			<![CDATA[
+				Prueba
+			]]>
+		</materia1>
+	</semestre1>
+</materias>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF8"?>
+
+<!DOCTYPE materias [
+		<!ELEMENT materias (semestre1)*>
+		<!ELEMENT semestre1 (materia1|materia2)*>
+		<!ELEMENT materia1 (nombre|horario)*>
+		<!ELEMENT nombre (#PCDATA)>
+		<!ELEMENT horario (#PCDATA)>
+		<!ELEMENT materia2 (nombre|horario)*>
+		]>
+<materias>
+	<semestre1>
+		<materia1>
+			<nombre>CÉS3</nombre>
+			<horario>6pm</horario>
+		</materia1>
+		<materia2>
+			<nombre>Base de datos 2</nombre>
+			<horario>10am</horario>
+		</materia2>
+	</semestre1>
+</materias>

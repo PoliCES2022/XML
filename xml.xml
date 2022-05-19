@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-15"?>
+<!DOCTYPE saludo [
+    <!ELEMENT saludo (hola,nombre,ejemplo,ciudad)>
+    <!ELEMENT hola (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT ejemplo (#PCDATA)>
+    <!ELEMENT ciudad (comuna)>
+    <!ELEMENT comuna (barrio)>
+    <!ELEMENT barrio (#PCDATA)>
+]>
+
+<saludo>
+    <hola>Hola Mundo</hola>
+    <nombre>Soy Carlos</nombre>
+    <ejemplo>Etiqueta ejemplo</ejemplo>
+    <ciudad>
+        <comuna>
+            <barrio>El Corazon</barrio>
+        </comuna>
+    </ciudad>
+</saludo>

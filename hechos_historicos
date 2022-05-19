@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-15" ?>
+<!DOCTYPE hechos_historicos [
+    <!ELEMENT hechos_historicos (hecho_historico)>
+    <!ELEMENT hecho_historico (fecha)>
+    <!ATTLIST hecho_historico descripcion CDATA #IMPLIED>
+    <!ELEMENT fecha (dia, mes, año)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT año (#PCDATA)>
+]>
+
+<hechos_historicos xmlns="">
+    <hecho_historico descripcion="IBM da a conocer el PC.">
+        <fecha>
+            <dia>12</dia>
+            <mes>8</mes>
+            <año>1981</año>
+        </fecha>
+    </hecho_historico>
+    <hecho_historico descripcion="Se funda Google.">
+        <fecha>
+            <dia>4</dia>
+            <mes>9</mes>
+            <año>1998</año>
+        </fecha>
+    </hecho_historico>
+    <hecho_historico descripcion="Se funda Facebook. ">
+        <fecha>
+            <dia>4</dia>
+            <mes>2</mes>
+            <año>2002</año>
+        </fecha>
+    </hecho_historico>
+</hechos_historicos>
